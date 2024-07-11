@@ -1,0 +1,34 @@
+{"intents": [
+    { 
+        "tag": "merhaba",
+        "patterns": ["Merhaba","Selam","Günaydın","İyi günler","Naber.","Hey.","Nasılsın?","Gün"],
+        "response": ["merhaba"]
+    },
+    { 
+        "tag": "hoşçakal",
+        "patterns": ["görüşürüz","görüşmek üzere","tamamdır","işim bitti","hoşcakal","Tamamdır by","Hoşçakal","by","bb","Görüşürüz","Kendine iyi bak.","Sonra görüşürüz","Görüşmez üzere.","Görüşürüz kendine iyi bak, Hoşçakal.","Bay Bay"],
+        "response": ["hoşçakal"]
+    },
+    {
+        "tag":"grafik",
+        "patterns":["senet","hisse","Grafik","Hissenin grafiğini görmek istiyorum","Hisse grafiği","Hisse senedine bakacağım","Hisse fiyatı nedir?","Bana hissemin grafiğini göster"],
+        "response":["grafik"]
+    },
+    { 
+        "tag": "rsı",
+        "patterns": ["RSI","rsı","RSI değerini verir misin ?","rsı değerini ver","RSI (Relative Strength Index) Göreceli Güç Endeksi ","RSI nedir ","RSI değerini göster ","Güç endeksini ver ","Görece güç endeksini yaz.","Endekse bakmak istiyorum","Endeksi ver","Endeks","Görece Güç Endeks"],
+        "response": ["rsı"]
+    },
+    { 
+        "tag": "ema",
+        "patterns": ["EMA","ema","ema değerini verir misin?","ema değerini ver","EMA (Exponential Moving Average) - Üssel Hareketli Ortalama","EMA nedir","EMA değerini göster","Üsel hareketli ortlamayı ver","Haraketli ortlaması nedir?","Ortlamayı ver","Üsel Haraketli Ortlamayı görmek istiyorum","Üsel Hareket Ortalama"],
+        "response": ["ema"]
+    },
+    { 
+        "tag": "sma",
+        "patterns": ["SMA","sma","sma değerini verir misin ?","sma değerini ver.","SMA (Simple Moving Average)","SMA nedir","SMA değerini ver","Basit hareketli ortlamayı ver","Haraketli ortlaması nedir?","Ortlamayı ver","basit hareketli ortlamayı görmek istiyorum.","Basit Hareketli Ortama SMA","Basit Hareket Ortalama","Kapanış fiyat ortalaması"],
+        "response": ["sma"]
+    }
+
+
+]}
