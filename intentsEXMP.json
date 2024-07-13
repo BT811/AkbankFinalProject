@@ -6,12 +6,12 @@
     },
     { 
         "tag": "hoşçakal",
-        "patterns": ["görüşürüz","görüşmek üzere","tamamdır","işim bitti","hoşcakal","Tamamdır by","Hoşçakal","by","bb","Görüşürüz","Kendine iyi bak.","Sonra görüşürüz","Görüşmez üzere.","Görüşürüz kendine iyi bak, Hoşçakal.","Bay Bay"],
+        "patterns": ["görüşürüz","görüşmek üzere","tamamdır","işim bitti","hoşçakal","Tamamdır by","Hoşçakal","by","bb","Görüşürüz","Kendine iyi bak.","Sonra görüşürüz","Görüşmez üzere.","Görüşürüz kendine iyi bak, Hoşçakal.","Bay Bay"],
         "response": ["hoşçakal"]
     },
     {
         "tag":"grafik",
-        "patterns":["senet","hisse","Grafik","Hissenin grafiğini görmek istiyorum","Hisse grafiği","Hisse senedine bakacağım","Hisse fiyatı nedir?","Bana hissemin grafiğini göster"],
+        "patterns":["grafik ver","senet","hisse","Grafik","grafiği göster","grafiğe","Hissenin grafiğini görmek istiyorum","Hisse grafiği","Hisse senedine bakacağım","Hisse fiyatı nedir?","Bana hissemin grafiğini göster"],
         "response":["grafik"]
     },
     { 
@@ -26,9 +26,23 @@
     },
     { 
         "tag": "sma",
-        "patterns": ["SMA","sma","sma değerini verir misin ?","sma değerini ver.","SMA (Simple Moving Average)","SMA nedir","SMA değerini ver","Basit hareketli ortlamayı ver","Haraketli ortlaması nedir?","Ortlamayı ver","basit hareketli ortlamayı görmek istiyorum.","Basit Hareketli Ortama SMA","Basit Hareket Ortalama","Kapanış fiyat ortalaması"],
+        "patterns": ["SMA","sma","sma değerini verir misin ?","sma değerini ver.","SMA (Simple Moving Average)","SMA nedir","SMA değerini ver","Basit hareketli ortalamayı ver","Haraketli ortlaması nedir?","Ortlamayı ver","basit hareketli ortlamayı görmek istiyorum.","Basit Hareketli Ortama SMA","Basit Hareket Ortalama","Kapanış fiyat ortalaması"],
         "response": ["sma"]
+    },
+    { 
+        "tag": "tahmin",
+        "patterns": ["açılış değer tahmini","açılış değerini tahmin et","hisse tahmin et","tahmin modelini çalıştır","model","tahmin","hisse açılış değerini tahmin et"],
+        "response": ["tahmin"]
+    },
+    { 
+        "tag": "ticker",
+        "patterns": ["değiş","sembol","ticked","değiştirmek","değiştir","Başka bir hisseye bakmak istiyorum","hisse değiştir","başka bir hisseme bakmak istiyorum"],
+        "response": ["ticker"]
+    },
+    { 
+        "tag": "macd",
+        "patterns": ["macd","moving average convergence divergence","Hareketli ortalama yakınsama ıraksama","macd si nedir","macd ver","macd hesapla","yakınsama","ıraksama"],
+        "response": ["macd"]
     }
-
 
 ]}
