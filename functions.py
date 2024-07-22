@@ -117,7 +117,7 @@ def res_sup_graph():
     
 def myStocks():
     user_operations = pd.read_csv("kullanıcı_işlemleri.csv")
-    return stock_information(user_operations)
+    return str(stock_information(user_operations))
 
 def user_opertation_graph():
     global ticker

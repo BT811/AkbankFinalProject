@@ -103,7 +103,7 @@ def show_user_opertation_graph(ticker, data, user_operations):
         return "Bu hisse ile daha önce alım-satım işlemi yapmamışsınız."
     
     df = stock_information(user_operations)
-    a_cost = df.loc[df["Hisse Sembolü"] == ticker,"Ortalama Maliyet"].values[0]
+    a_cost = df.loc[df["Hisse Sembolü"] == ticker_control,"Ortalama Maliyet"].values[0]
  
 
     data.index = data.index.tz_localize(None)
@@ -147,6 +147,6 @@ def show_user_opertation_graph(ticker, data, user_operations):
     mpf_style = mpf.make_mpf_style(base_mpf_style="nightclouds", marketcolors=colors)
     
     fig, axlist = mpf.plot(data, addplot = apd, type='candle',style=mpf_style,volume=True, returnfig=True)
-    axlist[0].axhline(y=a_cost, color="blue", linestyle="--", linewidth =2, label="Ortalama Maliyet")
+    axlist[0].axhline(y=a_cost, color="lightblue", linestyle="--", linewidth =2, label="Ortalama Maliyet")
 
     return fig

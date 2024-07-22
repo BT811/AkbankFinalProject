@@ -1,10 +1,9 @@
-# main.py
 import json
 import pickle
 import numpy as np
 import nltk
 import tensorflow as tf
-from functionsMain import (
+from functions import (
     hello, goodby, enter_ticker, graph, calculate_RSI, 
     calculate_EMA, calculate_SMA, calculate_MACD,
     model_tahmin,res_sup_graph,myStocks,
