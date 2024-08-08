@@ -116,7 +116,7 @@ def res_sup_graph():
     return res_sup_line_graph(data)
     
 def myStocks():
-    user_operations = pd.read_csv("kullanıcı_işlemleri.csv")
+    user_operations = pd.read_csv("Excel/kullanıcı_işlemleri.csv")
     return str(stock_information(user_operations))
 
 def user_opertation_graph():
@@ -124,6 +124,6 @@ def user_opertation_graph():
     global data
     if ticker is None:
         enter_ticker()
-    user_operations = pd.read_csv("kullanıcı_işlemleri.csv", parse_dates=['İşlem Tarihi'], index_col='İşlem Tarihi')
+    user_operations = pd.read_csv("Excel/kullanıcı_işlemleri.csv", parse_dates=['İşlem Tarihi'], index_col='İşlem Tarihi')
 
     return show_user_opertation_graph(ticker, data, user_operations)

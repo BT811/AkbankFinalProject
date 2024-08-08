@@ -12,10 +12,10 @@ from functions import (
 import matplotlib.pyplot as plt
 
 
-intents = json.loads(open('intentsEXMP.json', "r", encoding="utf-8").read())
-words = pickle.load(open("wordsExp.pkl", "rb"))
-classes = pickle.load(open("classesExp.pkl", "rb"))
-model = tf.keras.models.load_model('chatbot02.h5')
+intents = json.loads(open('DilModeli/intents.json', "r", encoding="utf-8").read())
+words = pickle.load(open("DilModeli/words.pkl", "rb"))
+classes = pickle.load(open("DilModeli/classes.pkl", "rb"))
+model = tf.keras.models.load_model('DilModeli/chatbot.h5')
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)

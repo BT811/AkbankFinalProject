@@ -1,0 +1,65 @@
+{"intents": [
+    { 
+        "tag": "merhaba",
+        "patterns": ["Merhaba","Selam","Günaydın","İyi günler","Naber.","Hey.","Nasılsın?","Gün"],
+        "response": ["merhaba"]
+    },
+    { 
+        "tag": "hoşçakal",
+        "patterns": ["görüşürüz","görüşmek üzere","tamamdır","işim bitti","hoşçakal","Tamamdır by","Hoşçakal","by","bb","Görüşürüz","Kendine iyi bak.","Sonra görüşürüz","Görüşmez üzere.","Görüşürüz kendine iyi bak, Hoşçakal.","Bay Bay"],
+        "response": ["hoşçakal"]
+    },
+    {
+        "tag":"grafik",
+        "patterns":["grafik ver","senet","hisse","Grafik","grafiği göster","grafiğe","Hissenin grafiğini görmek istiyorum","Hisse grafiği","Hisse senedine bakacağım","Hisse fiyatı nedir?","Bana hissemin grafiğini göster"],
+        "response":["grafik"]
+    },
+    { 
+        "tag": "rsı",
+        "patterns": ["RSI","rsı","RSI değerini verir misin ?","rsı değerini ver","RSI (Relative Strength Index) Göreceli Güç Endeksi ","RSI nedir ","RSI değerini göster ","Güç endeksini ver ","Görece güç endeksini yaz.","Endekse bakmak istiyorum","Endeksi ver","Endeks","Görece Güç Endeks"],
+        "response": ["rsı"]
+    },
+    { 
+        "tag": "ema",
+        "patterns": ["EMA","ema","ema değerini verir misin?","ema değerini ver","EMA (Exponential Moving Average) - Üssel Hareketli Ortalama","EMA nedir","EMA değerini göster","Üsel hareketli ortlamayı ver","Haraketli ortlaması nedir?","Ortlamayı ver","Üsel Haraketli Ortlamayı görmek istiyorum","Üsel Hareket Ortalama"],
+        "response": ["ema"]
+    },
+    { 
+        "tag": "sma",
+        "patterns": ["SMA","sma","sma değerini verir misin ?","sma değerini ver.","SMA (Simple Moving Average)","SMA nedir","SMA değerini ver","Basit hareketli ortalamayı ver","Haraketli ortlaması nedir?","Ortlamayı ver","basit hareketli ortlamayı görmek istiyorum.","Basit Hareketli Ortama SMA","Basit Hareket Ortalama","Kapanış fiyat ortalaması"],
+        "response": ["sma"]
+    },
+    { 
+        "tag": "tahmin",
+        "patterns": ["açılış değer tahmini","açılış değerini tahmin et","hisse tahmin et","tahmin modelini çalıştır","model","tahmin","hisse açılış değerini tahmin et"],
+        "response": ["tahmin"]
+    },
+    { 
+        "tag": "ticker",
+        "patterns": ["değiş","sembol","ticked","değiştirmek","değiştir","Başka bir hisseye bakmak istiyorum","hisse değiştir","başka bir hisseme bakmak istiyorum"],
+        "response": ["ticker"]
+    },
+    { 
+        "tag": "macd",
+        "patterns": ["macd","moving average convergence divergence","Hareketli ortalama yakınsama ıraksama","macd si nedir","macd ver","macd hesapla","yakınsama","ıraksama"],
+        "response": ["macd"]
+    },
+    { 
+        "tag": "destekdireç",
+        "patterns": ["destek","direnç","destek direnç çizgilerini ver","destek direnç noktaları","destek direnç grafiğini ver","destek ve direnç çizgisi","çizgi","destek direnç grafik"],
+        "response": ["destekdireç"]
+    },
+    { 
+        "tag": "hissem",
+        "patterns": ["portföyümü ver","portföy bilgilerimi ver","hissem","hisslerim","kendi hisselerime bakmak istiyorum","hisse bilgilerimi ver","hisse sayım","hisselerimi göster","ortalama maliyet","Hangi hisselerim var","Hisselerim neler ?"],
+        "response": ["hissem"]
+    }
+    ,
+    { 
+        "tag": "kullanıcıişlemleri",
+        "patterns": ["alım satım yaptığım noktaları ver","alım satım yaptığım noktaları göster","alış ve satışlarımın notkasını ver","alış satış noktaları","alım satım grafik", "hareketlerimi grafikte ver","Alım satım grafiğimi ver","alım satım noktaları","alım satım noktalarımın grafiğini ver","hangi noktalarda alım yapmışım","satış yaptığım yerleri göster","alım satım grafiği ver"],
+        "response": ["kullanıcıişlemleri"]
+    }
+
+
+]}

@@ -13,7 +13,7 @@ def train_and_predict_next_n_days(ticker_symbol, n_days):
     # Veri çekme ve kaydetme
     ticker_data = yf.Ticker(ticker_symbol)
     hist_data = ticker_data.history(period='5y')
-    csv_file_path = 'hisse_senedi_verileri.csv'
+    csv_file_path = 'Excel/hisse_senedi_verileri.csv'
     hist_data.to_csv(csv_file_path)
     print(f"Hisse senedi verileri {csv_file_path} dosyasına kaydedildi.")
     

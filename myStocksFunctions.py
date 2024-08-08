@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-df = pd.read_csv('kullanıcı_işlemleri.csv', encoding='utf-8-sig')
+df = pd.read_csv('Excel/kullanıcı_işlemleri.csv', encoding='utf-8-sig')
 
 def calculate_user_shares(df):
     user_shares = {}
