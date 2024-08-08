@@ -260,33 +260,25 @@ def send_message(event=None):
     chat_window.config(state=tk.DISABLED)
     chat_window.yview(tk.END)
 
-# Tkinter GUI oluşturma
 root = tk.Tk()
 root.title("Chat Bot")
 
-
-# Chat penceresi
 chat_window = scrolledtext.ScrolledText(root, state=tk.DISABLED, width=80, height=20, wrap=tk.WORD, font=("Helvetica", 12), bg="#333333", fg="#CCCCCC", padx=10, pady=10)
 chat_window.tag_config('user', foreground='#FFFFFF')  # Kullanıcı mesajları için beyaz renk
 chat_window.tag_config('bot', foreground='#FFFFFF')  # Bot mesajları için
 chat_window.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=10, pady=10)
 
-# Kullanıcı giriş kutusu
 entry_frame = tk.Frame(root, bg='#2E2E2E')
 entry_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=10)
 entry = tk.Entry(entry_frame, width=60, font=("Helvetica", 12), bg="#555555", fg="#CCCCCC", relief=tk.FLAT, bd=2, insertbackground="#CCCCCC")
 entry.pack(side=tk.LEFT, padx=5, pady=5, ipady=5, expand=True, fill=tk.X)
 entry.bind("<Return>", send_message)
 
-# Gönder düğmesi
 send_button = tk.Button(entry_frame, text="Gönder", font=('Helvetica', 12), bg="#4CAF50", fg="white", relief=tk.FLAT, activebackground="#45a049", padx=10, pady=5, command=send_message)
 send_button.pack(side=tk.LEFT, padx=5, pady=5)
 
-# Arka plan rengi
 root.configure(background='#2E2E2E')
 
-# Tam ekran yapıldığında uyumsuzluğu engellemek için minimum boyut ayarı
 root.minsize(800, 600)
 
-# Tkinter ana döngüsü
 root.mainloop()
